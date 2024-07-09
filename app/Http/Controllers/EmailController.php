@@ -10,9 +10,7 @@ class EmailController extends Controller
 {
     Public function sendEmail(){
         $toEmail = "developervikashkr@gmail.com";
-        $message = "Hello,
-
-Welcome to SupportCRM! We are thrilled to have you on board. Our team is here to assist you with any questions or support you may need.";
+        $message = "We are thrilled to have you on board. Our team is here to assist you with any questions or support you may need.";
         $subject = "Welcome to SupportCRM!";
 
         $request = Mail::to($toEmail)->send(new SupportEmail($message, $subject));
