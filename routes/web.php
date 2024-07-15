@@ -8,5 +8,6 @@ Route::get('/', function () {
 });
 
 // Route::get('/api/send-email', [EmailController::class, 'sendEmail']);
+Route::get('/api/retrieve-email', [EmailController::class, 'retrieveEmail']);
 
 require __DIR__.'/auth.php';
